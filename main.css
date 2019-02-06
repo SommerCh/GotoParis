@@ -1,0 +1,726 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+#landingpage {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    height: 100vh;
+
+}
+
+#h11 {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: white;
+    font-size: 37px;
+    font-family: 'Spectral SC';
+    animation: h1 2s ease-in-out;
+
+}
+
+@keyframes h1 {
+    0% {
+        left: -100%
+    }
+
+    70% {
+        left: 15%
+    }
+
+    100% {
+        left: 5%
+    }
+}
+
+
+.arrows-container {
+    display: flex;
+    position: absolute;
+    top: 46%;
+    left: 32%;
+    transform: rotate(90deg)
+}
+
+.arrow {
+    padding: 1rem;
+    box-shadow: 2px -2px white inset;
+    transform: rotate(225deg);
+    opacity: 0;
+    position: absolute;
+}
+
+.arrow-one {
+    animation: arrowMovement 2s ease-in-out infinite;
+}
+
+.arrow-two {
+    animation: arrowMovement 2s 1s ease-in-out infinite;
+}
+
+@keyframes arrowMovement {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        left: 30px;
+        opacity: 0;
+    }
+}
+
+#knap {
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 15px 25px;
+    position: absolute;
+    top: 57%;
+    left: 27%;
+    background-color: rgba(151, 151, 197, 0.534);
+    transition: 1s;
+    border: solid 2px white;
+    box-shadow: 1px 2px 15px 2px rgb(189, 171, 171)
+}
+
+#a {
+    color: white;
+}
+
+button:hover {
+
+    transform: scale(1.1);
+
+}
+
+
+header {
+
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    height: 705px;
+    width: 100%;
+
+}
+
+
+
+nav {
+    background-color: rgba(207, 195, 206, 0.493);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.089);
+}
+
+ul {
+    display: flex
+}
+
+ul li {
+    list-style-type: none;
+    margin: 2% 0% 0% 9%;
+    padding-bottom: 1%;
+    transition: 1s;
+    font-family: 'Bad Script';
+}
+
+
+li:hover {
+    transform: scale(1.2)
+}
+
+
+li:nth-child(1) {
+    margin-left: 21%;
+}
+
+li a {
+    text-decoration: none;
+    color: rgba(53, 43, 52, 0.911);
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(53, 43, 52, 0.911);
+
+}
+
+
+li a:hover {
+    color: rgba(82, 65, 80, 0.911);
+    border-bottom: solid black 2px;
+
+}
+
+#logo {
+    position: absolute;
+    width: 12%;
+    margin-top: 0.6%;
+}
+
+#cover_img {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    height: 705px;
+    width: 100%;
+    filter: blur(5px);
+    z-index: -100;
+}
+
+#hand {
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+/* trin1 */
+#ferievalg {
+    height: 100vh;
+    background-color: rgba(221, 213, 221, 0.507)
+}
+
+#trin1 {
+    height: 150px;
+    background-color: gray;
+}
+
+h2 {
+    color: white;
+    font-size: 37px;
+    font-family: 'Spectral SC';
+    text-align: center;
+    padding-top: 40px;
+}
+
+.arrows-container1 {
+    display: flex;
+    position: absolute;
+    top: 110%;
+    left: 51%;
+    transform: rotate(90deg)
+}
+
+.arrow1 {
+    padding: 1rem;
+    box-shadow: 2px -2px white inset;
+    transform: rotate(225deg);
+    opacity: 0;
+    position: absolute;
+}
+
+.arrow-one1 {
+    animation: arrowMovement 2s ease-in-out infinite;
+}
+
+.arrow-two1 {
+    animation: arrowMovement 2s 1s ease-in-out infinite;
+}
+
+h3 {
+    color: white;
+    font-size: 37px;
+    font-family: 'Spectral SC';
+    text-align: center;
+    background-color: rgb(193, 255, 47)
+}
+
+#imgwrap {
+    display: flex;
+    width: 100%;
+}
+
+figure {
+    width: 100%;
+    position: relative;
+}
+
+.pak {
+    width: 100%;
+    padding: 2%;
+    height: 400px;
+}
+
+
+figcaption {
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all .25s ease-in-out;
+    background-color: #000000;
+    color: white;
+    font-size: 37px;
+    font-family: 'Spectral SC';
+    text-align: center;
+    height: 100%;
+}
+
+figcaption:hover {
+    opacity: .5;
+    cursor: pointer;
+
+}
+
+.valg {
+    border-radius: 50px;
+    padding: 20px 30px;
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    background-color: rgba(151, 151, 197, 0.534);
+    transition: 1s;
+    border: solid 2px white;
+    box-shadow: 1px 2px 15px 2px rgb(189, 171, 171);
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.mere {
+    padding: 15px 25px;
+    position: absolute;
+    bottom: 4%;
+    left: 2%;
+    background-color: rgba(151, 151, 197, 0.753);
+    transition: 1s;
+    border: solid 2px white;
+    box-shadow: 1px 2px 15px 2px rgb(189, 171, 171);
+    width: 96%;
+    font-size: 20px;
+}
+
+/* trin2 */
+#familie {
+    background-color: rgb(202, 215, 226)
+}
+
+#trin2 {
+    height: 150px;
+    background-color: gray;
+}
+
+.arrows-container2 {
+    display: flex;
+    position: absolute;
+    top: 210%;
+    left: 51%;
+    transform: rotate(90deg)
+}
+
+.arrow2 {
+    padding: 1rem;
+    box-shadow: 2px -2px white inset;
+    transform: rotate(225deg);
+    opacity: 0;
+    position: absolute;
+}
+
+.arrow-one2 {
+    animation: arrowMovement 2s ease-in-out infinite;
+}
+
+.arrow-two2 {
+    animation: arrowMovement 2s 1s ease-in-out infinite;
+}
+
+/* gallery */
+.imgfa {
+    width: 100%;
+    height: 100%;
+    padding: 5%
+}
+
+.slideshow {
+
+    position: relative;
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.slideshow>div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* gallery2 */
+
+.slideshow2 {
+
+    position: relative;
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.slideshow2>div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* gallery3 */
+
+
+.slideshow3 {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.slideshow3>div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 30px;
+    margin: 5% 5% 5% 30%;
+}
+
+#wrap2 {
+    display: flex;
+}
+
+#box1,
+#box2,
+#box3 {
+    margin: 2%;
+    width: 100%;
+}
+
+.text1,
+.text2,
+.text3 {
+    display: none;
+    font-family: 'Courier New', Courier, monospace, Times, serif;
+    line-height: 25px;
+}
+
+.pb {
+    margin: 5% 10% 0% 0%;
+
+}
+
+
+.valg2 {
+    position: absolute;
+    border-radius: 50px;
+    padding: 20px 30px;
+    background-color: rgba(151, 151, 197, 0.534);
+    transition: 1s;
+    border: solid 2px white;
+    box-shadow: 1px 2px 15px 2px rgb(189, 171, 171);
+    font-size: 17px;
+    cursor: pointer;
+    top: 233%;
+}
+
+.mere2,
+.mere1,
+.mere3 {
+    padding: 15px 25px;
+    background-color: rgba(151, 151, 197, 0.753);
+    transition: 1s;
+    border: solid 2px white;
+    box-shadow: 1px 2px 15px 2px rgb(189, 171, 171);
+    width: 100%;
+    font-size: 20px;
+}
+
+/* Oplevelser */
+
+
+#events {}
+
+#trin3 {
+    height: 150px;
+    background-color: gray;
+}
+
+.arrows-container3 {
+    display: flex;
+    position: absolute;
+    top: 321%;
+    left: 51%;
+    transform: rotate(90deg)
+}
+
+.arrow3 {
+    padding: 1rem;
+    box-shadow: 2px -2px white inset;
+    transform: rotate(225deg);
+    opacity: 0;
+    position: absolute;
+}
+
+.arrow-one3 {
+    animation: arrowMovement 2s ease-in-out infinite;
+}
+
+.arrow-two3 {
+    animation: arrowMovement 2s 1s ease-in-out infinite;
+}
+
+
+
+#gridlayout {}
+
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    grid-gap: 25px;
+    margin: 2%;
+}
+
+
+.imgcover {
+    width: 100%;
+}
+
+.check {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px
+}
+
+.gridimg {
+    padding: 2% 2% 0% 2%;
+    border: 2px solid black;
+    font-size: 16px;
+    background-color: azure;
+    box-shadow: 15px 15px 15px grey;
+}
+
+.gridimg p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 5px 0px 20px 0px;
+}
+
+.gridimg strong {
+    font-size: 22px;
+}
+
+.valg3 {
+    padding: 1% 12% 1% 12%;
+    border: 2px solid black;
+    background-color: rgba(151, 151, 197, 0.753);
+    transition: 1s;
+    border: solid 2px white;
+    box-shadow: 1px 2px 15px 2px rgb(189, 171, 171);
+    width: 80%;
+    margin: 5% 10% 10% 10%;
+    font-size: 30px;
+    font-family: 'Spectral SC';
+
+}
+
+/* form */
+
+#trin4 {
+    height: 150px;
+    background-color: gray;
+}
+
+.arrows-container4 {
+    display: flex;
+    position: absolute;
+    top: 509%;
+    left: 51%;
+    transform: rotate(90deg)
+}
+
+.arrow4 {
+    padding: 1rem;
+    box-shadow: 2px -2px white inset;
+    transform: rotate(225deg);
+    opacity: 0;
+    position: absolute;
+}
+
+.arrow-one4 {
+    animation: arrowMovement 2s ease-in-out infinite;
+}
+
+.arrow-two4 {
+    animation: arrowMovement 2s 1s ease-in-out infinite;
+}
+
+form {
+    width: 100%;
+    margin-left: 25%;
+    padding-top: 5%;
+    font-family: 'bad script';
+    color: white;
+}
+
+#formwrap {
+    background-image: linear-gradient(rgb(56, 56, 83), rgb(56, 52, 52))
+}
+
+.row {
+    width: 100%;
+}
+
+.col1 {
+    width: 25%;
+    margin-top: 6px;
+    font-size: 25px;
+}
+
+.col2 {}
+
+
+#send {
+    padding: 1% 12% 1% 12%;
+    border: 2px solid black;
+    background-color: rgba(151, 151, 197, 0.753);
+    transition: 1s;
+    border: solid 2px white;
+    box-shadow: 1px 2px 15px 2px rgb(189, 171, 171);
+    width: 50%;
+    margin: 2% 10% 10% 0%;
+    font-size: 30px;
+    font-family: 'Spectral SC';
+    cursor: pointer;
+
+}
+
+#subtext {
+    font-size: 30px
+}
+
+#send:hover {
+    transform: scale(1.1);
+}
+
+#enavn {
+    height: 40px;
+    width: 50%;
+}
+
+#fnavn {
+    height: 40px;
+    width: 50%
+}
+
+#nummer {
+    height: 40px;
+    width: 50%
+}
+
+#email {
+    height: 40px;
+    width: 50%
+}
+
+#besked {
+    width: 50%;
+    height: 100px;
+}
+
+
+
+
+
+
+
+/* Om */
+#om {
+    width: 100%;
+}
+
+#h12 {
+    color: white;
+    font-size: 37px;
+    font-family: 'Spectral SC';
+    text-align: center;
+    height: 150px;
+    background-color: gray;
+    padding-top: 3.5%
+}
+
+#folk {
+    margin: 2%
+}
+
+.textomh1 {
+    color: rgb(6, 6, 102);
+    font-size: 30px;
+    font-family: 'Spectral SC';
+    text-align: center;
+    margin: 2%;
+    border-top: solid 1px black;
+    padding-top: 1.5%
+}
+
+#textomunder {
+    font-size: 37px;
+    font-family: 'Spectral SC';
+    text-align: center;
+    background-color: rgb(193, 255, 47)
+}
+
+.textom1 {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 22px;
+    font-family: 'Bad Script';
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px
+}
+
+.textomh2 {
+    color: rgb(137, 137, 241);
+    font-size: 25px;
+    font-family: 'Spectral SC';
+    text-align: center;
+    margin: 2%;
+}
+
+.textom {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 22px;
+}
+
+
+
